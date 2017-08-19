@@ -10,4 +10,4 @@ RUN addgroup -g 1000 node \
     && apk add --update --no-cache nodejs-current nodejs-current-npm nodejs-current-dev
 
 RUN  apk add --update --no-cache git bash openssh
-RUN npm config set registry https://registry.npm.taobao.org && npm install -g pm2@latest && npm install -g typescript@2.1.5 
+RUN npm config set registry https://registry.npm.taobao.org && npm install -g pm2@latest && npm install -g typescript@2.1.5 && npm cache clean
